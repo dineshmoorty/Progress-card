@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./Styles/general.css">
+  <link rel="stylesheet" href="./Styles/nav.css">
+  <link rel="stylesheet" href="./Styles/index.css">
+  <link rel="stylesheet" href="./Styles/footer.css">
+  <link rel="stylesheet" href="./content.html">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Progress Card</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <nav class="navbar">
+        <h5><i class="bi bi-mortarboard-fill edu"></i>School Name</h5>
+  
+        <button class="login text-center">Admin Login<i class="bi bi-box-arrow-in-right login"></i></button>
+      </nav>
+      <header>
+        <span class="book-icon">
+          <i class="bi bi-book-half"></i>
+          <h3>Progress Card</h3>
+        </span>
+      </header>
+  
+      <div class="row">
+        <div class="col student-details">
+          <label for="" class="">Student Name</label>
+          <span class="tick"><i class="bi bi-person-fill-check"></i></span>
+          <input type="text" class="input-name student">
+        </div>
+  
+        <div class="col student-details">
+          <label for="" class="">Roll Number </label>
+          <span class="tick"><i class="bi bi-patch-check-fill"></i></span>
+          <input type="number" class="input-name rollnumber">
+        </div>
+  
+        <div class="col student-details">
+          <label for="" class="">Class</label>
+          <select name="" id="class-detail">
+            <option value="">Select Class</option>
+            <option value="6th" class="select">6th</option>
+            <option value="7th" class="select">7th</option>
+            <option value="8th" class="select">8th</option>
+          </select>
+        </div>
+  
+        <div class="col student-details">
+          <label for="" class="">Section</label>
+          <select name="" id="section-detail">
+            <option value="">Select Section</option>
+            <option value="A">A Section</option>
+            <option value="B">B Section</option>
+            <option value="C">C Section</option>
+          </select>
+        </div>
+      </div>
+      <label for="">Progress Card</label>
+      <select name="" id="progress-card">
+        <option value="">Exam</option>
+        <option value="Quarterly">Quarterly</option>
+        <option value="Half-Yearly">Half-Yearly</option>
+        <option value="Annual">Annual</option>
+      </select>
+      <button class="btn btn-primary Get">Save Details</button>
+  
+      <table class="table table-light table-hover student-table table-bordered " >
+        <thead class="table-dark">
+          <tr>
+            <th colspan="5" class="text-center"><i class="bi bi-person-vcard"></i>Student Details</th>
+          </tr>
+        </thead>
+        <tr>
+          <td class="text-center " colspan="2">Student Name</td>
+          <td class="text-center fw-bold" colspan="3"></td>
+        </tr>
+        <tr>
+          <td class="text-center" colspan="2">Roll Number </td>
+          <td class="text-center fw-bold" colspan="3"></td>
+        </tr>
+        <tr>
+          <td class="text-center" colspan="2">Class</td>
+          <td class="text-center fw-bold" colspan="3"></td>
+        </tr>
+        <tr>
+          <td class="text-center" colspan="2">Section</td>
+          <td class="text-center fw-bold" colspan="3"></td>
+        </tr>
+        <tr>
+          <td class="text-center" colspan="2">Progress Type</td>
+          <td class="text-center fw-bold" colspan="3"></td>
+        </tr>
+  
+        <thead>
+          <tr>
+            <th class="text-center table-dark" colspan="5">Exam Results</th>
+          </tr>
+          <tr>
+            <th class="text-center">Subjects</th>
+            <th class="text-center">Marks</th>
+            <th class="text-center">Grade</th>
+            <th colspan="2" class="text-center">Action</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr>
+            <td class="text-center">Tamil</td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center"><button class=" edit">Modify</button></td>
+            <td class="text-center"><button class="save">Save</button></td>
+          </tr>
+  
+          <tr>
+            <td class="text-center">English</td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center"><button class=" edit">Modify</button></td>
+            <td class="text-center"><button class="save">Save</button></td>
+          </tr>
+  
+          <tr>
+            <td class="text-center">Mathematics</td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center"><button class=" edit">Modify</button></td>
+            <td class="text-center"><button class="save">Save</button></td>
+          </tr>
+  
+          <tr>
+            <td class="text-center">Science</td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center"><button class=" edit">Modify</button></td>
+            <td class="text-center"><button class="save">Save</button></td>
+          </tr>
+  
+          <tr>
+            <td class="text-center">Social Science</td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center fw-bold"></td>
+            <td class="text-center"><button class=" edit">Modify</button></td>
+            <td class="text-center"><button class="save">Save</button></td>
+          </tr>
+  
+          <tr>
+            <td class="text-center fw-bold">Total</td>
+            <td class="text-center fw-bold" colspan="2"></td>
+            <td class="text-center fw-bold" colspan="2"></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <a href="https://www.digilocker.gov.in/" target="_blank">
+      <button class="btn btn-primary"><i class="bi bi-cloud-arrow-up"></i>Digilocker</button></a>
+  
+      <a href="./progress.html" target="_blank">
+      <button class="btn btn-dark"><i class="bi bi-cloud-arrow-down"></i>Download</button></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Scripts/index.js"></script>
+    <script src="./Scripts/get-student-details.js"></script>
+  
+  </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+header {
+  height: 7vh;
+  background-color: rgba(79, 14, 219, 0.421);
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+h3 {
+  padding-left: 10px;
+}
+.book-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  margin-top: 0.1em;
+  color: black;
+  font-size: 28px;
+}
+h5{
+  margin-left: 10px;
+}
+.login {
+  padding: 4px 6px;
+  border: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.20s;
+}
+.login:active{
+  background-color: rgba(0, 255, 255, 0.432);
+}

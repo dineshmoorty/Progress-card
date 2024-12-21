@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     return; // Skip subject name and action buttons
 
                 const cellValue = cell.innerText;
-                cell.innerHTML = `<input type="text" value="${cellValue}" class="input-marks">`;
+                cell.innerHTML = `<input type="number" value="${cellValue}" class="input-marks">`;
             });
 
             row.querySelector('.edit').style.display = 'none';
